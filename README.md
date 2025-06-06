@@ -16,7 +16,7 @@ Players submit requests to join a game via an API endpoint. Each request include
 * `player_id`: A unique string identifier for the player.
 * `game_mode`: The desired game mode.
 * `player_skill_level`: An integer from 1 to 100, indicating the player's skill.
-* `timestamp_requested`: The time the request was made (ISO 8601 string or Unix timestamp).
+* `timestamp_requested`: The time the request was made (Unix timestamp).
 * `preferred_region`: The geographic region the player prefers for matchmaking.
 
 ### Skill-Based Matchmaking
@@ -49,23 +49,23 @@ Once a game session is ready and players are matched, the system simulates notif
 ### 1. Game Modes
 
 The system supports the following FPS game modes:
-* **TeamDeathmatch (TDM):** Classic team-vs-team elimination.
-* **FreeForAII (FFA):** Every player competes individually.
-* **CaptureTheFlag (CTF):** Team-based objective where players capture an opponent's flag.
+- **TeamDeathmatch:** Classic team-vs-team elimination. Code `TDM`.
+- **FreeForAll:** Every player competes individually. Code **`FFA`.**
+- **CaptureTheFlag:** Team-based objective where players capture an opponent's flag. Code **`CTF`.**
 
 ### 2. Player Skill Levels
 
 Player skill is represented by a numerical value from **1 to 100**, mapped to these military-themed tiers for matchmaking:
-* **Novice:** Skill Level 1 - 25
-* **Soldier:** Skill Level 26 - 50
-* **Special Forces:** Skill Level 51 - 75
-* **Elite:** Skill Level 76 - 100
+- **Novice:** Skill Level 1 - 25. Code `N`.
+- **Soldier:** Skill Level 26 - 50. Code `S`.
+- **Special Forces:** Skill Level 51 - 75. Code `F`.
+- **Elite:** Skill Level 76 - 100. Code `E`.
 
 ### 3. Regions
 
 Players select a preferred region for matchmaking, corresponding to major geographical areas. Matchmaking occurs exclusively within the chosen region to ensure low latency.
-* **Americas (AM):** North and South American continents.
-* **Europe (EU):** European continent.
-* **Asia:** Asian continent.
-* **Africa:** African continent.
-* **Oceania (OC):** Australia and surrounding islands.
+* **Americas:** North and South American continents. Code `AM`.
+* **Europe:** European continent. Code `EU`.
+* **Asia:** Asian continent. Code `AS`.
+* **Africa:** African continent. Code `AF`.
+* **Oceania:** Australia and surrounding islands. Code `OC`.
