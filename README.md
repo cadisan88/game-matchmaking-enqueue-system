@@ -50,8 +50,8 @@ Once a game session is ready and players are matched, the system simulates notif
 
 The system supports the following FPS game modes:
 - **TeamDeathmatch:** Classic team-vs-team elimination. Code `TDM`.
-- **FreeForAll:** Every player competes individually. Code **`FFA`.**
-- **CaptureTheFlag:** Team-based objective where players capture an opponent's flag. Code **`CTF`.**
+- **FreeForAll:** Every player competes individually. Code `FFA`.
+- **CaptureTheFlag:** Team-based objective where players capture an opponent's flag. Code `CTF`.
 
 ### 2. Player Skill Levels
 
